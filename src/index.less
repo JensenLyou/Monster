@@ -1,0 +1,53 @@
+body {
+  height: 100vh;
+  margin: 0;
+  background-color: #000;
+}
+
+
+@font-face {
+  font-family: 'VCR OSD Mono';
+  src: url(./assets/font/VCR_OSD_Mono.ttf);
+}
+
+@font-face {
+  font-family: 'VT323';
+  src: url(./assets/font/VT323.ttf);
+}
+
+
+.ant-btn {
+  font-family: VT323, monospace !important;
+  font-size: 1rem !important;
+  font-weight: 500 !important;
+  border: 1px solid rgba(144, 202, 249, 0.5) !important;
+  background-color: transparent !important;
+}
+
+.ant-btn:hover,
+.ant-btn:focus {
+  color: rgb(144, 202, 249) !important;
+  border: 1px solid rgb(144, 202, 249) !important;
+  background-color: rgba(144, 202, 249, 0.08) !important;
+}
+
+.ant-btn-text {
+  border: none !important
+}
+
+.ant-btn-text:hover,
+.ant-btn-text:focus {
+  color: #fff !important;
+  background: rgba(255, 255, 255, 0.08) !important;
+  border: none !important;
+}
+
+.ant-message-notice-content {
+  background-color: #000 !important;
+  font-family: 'VT323' !important;
+  font-size: 16px !important;
+}
+
+button:focus-visible {
+  outline: none;
+}

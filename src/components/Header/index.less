@@ -1,0 +1,169 @@
+.HeaderContainer {
+    position: fixed;
+    width: 100vw;
+    top: 0;
+    left: 0;
+    z-index: 999;
+
+    .HeaderWrapper {
+        display: flex;
+        height: 70px;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 24px;
+        background-image: repeating-linear-gradient(rgba(0, 255, 76, .1), rgba(255, 0, 0, .1) 2px, transparent 0, transparent 4px);
+        background-color: #000;
+
+        .logoLink {
+            z-index: 2;
+
+            .testNetBox {
+                background-color: #040;
+                position: absolute;
+                left: 200px;
+                top: 10px;
+                padding: 0px 3px;
+                font-family: 'VCR OSD Mono';
+                color: #0f0;
+                font-size: 6px;
+                border-radius: 4px;
+
+            }
+        }
+    }
+
+    .middleWrapper {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 2rem;
+        position: absolute;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+        z-index: 1;
+
+        a {
+            color: #0f0;
+            font-size: 1rem;
+            font-family: 'VCR OSD Mono';
+
+            &:hover {
+                color: #0f0;
+            }
+        }
+    }
+
+    .endWrapper {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 2rem;
+        z-index: 2;
+
+        .socialBtnLinkWrapper {
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 2rem;
+
+            .socialBtnLink {
+                display: flex;
+                justify-content: center;
+
+                a {
+                    color: white;
+                    font-size: .8rem;
+                    font-family: 'VCR OSD Mono';
+                    padding-left: 10px;
+
+                    &:hover {
+                        color: #fff;
+                    }
+                }
+
+                img {
+                    height: 20px;
+                }
+
+            }
+        }
+
+        .connectWalletBtn {
+            width: 200px;
+            border: 0;
+            color: #0f0;
+            background-color: #040;
+            text-decoration: none;
+            display: inline-block;
+            box-shadow: 10px 10px 0 rgb(0 0 0 / 75%);
+            position: relative;
+            font-family: VCR OSD Mono, monospace;
+            text-shadow: 2px 2px 0 rgb(0 0 0 / 75%);
+            font-size: 1.2rem;
+            letter-spacing: 0;
+            padding: 6px 8px;
+            min-width: 68px;
+            margin: 10px;
+            overflow: hidden;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms, box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms, border-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms, color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+            cursor: pointer;
+
+            &:hover {
+                background-color: #206e2d;
+            }
+        }
+
+    }
+
+    .selectLanguageWrapper {
+        font-weight: 400;
+        font-family: 'VT323';
+
+        .ant-select-selector {
+            font-size: 1rem !important;
+            padding: 0 11px 0 0 !important;
+
+            .ant-select-selection-item {
+                line-height: 26px !important;
+            }
+
+        }
+    }
+
+    .dropMenuWrapper {
+        width: 150px !important;
+        box-shadow: rgb(0 0 0 / 20%) 0px 5px 5px -3px, rgb(0 0 0 / 14%) 0px 8px 10px 1px, rgb(0 0 0 / 12%) 0px 3px 14px 2px !important;
+        background-color: rgb(17, 17, 17) !important;
+        font-family: 'VT323';
+        font-weight: 500 !important;
+        font-size: 1.5rem !important;
+        color: rgba(255, 255, 255, 0.7);
+
+        .ant-select-item-group,
+        .ant-select-item {
+            font-family: 'VT323';
+            font-weight: 500;
+            font-size: 1rem;
+            padding: 0 16px;
+            color: rgba(255, 255, 255, 0.7) !important;
+        }
+
+        .ant-select-item-option-disabled {
+            font-family: 'VT323';
+            font-weight: 500;
+            font-size: 1rem;
+            text-align: center;
+            padding: 0 16px;
+            color: rgba(255, 255, 255, 0.7) !important;
+            cursor: default;
+        }
+
+        .ant-select-item-option-active:not(.ant-select-item-option-disabled) {
+            background-color: rgba(255, 255, 255, 0.08) !important;
+        }
+    }
+}

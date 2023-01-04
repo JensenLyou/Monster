@@ -1,0 +1,111 @@
+.wrap {
+    position: relative;
+    max-width: 1200px;
+    padding-bottom: 200px;
+
+    &::after {
+        content: '';
+        position: absolute;
+        top: 40px;
+        left: 50%;
+        transform: translateX(-5px);
+        width: 10px;
+        height: 100%;
+        background-color: rgba(255, 255, 255);
+    }
+}
+
+.box {
+    position: relative;
+    right: 70px;
+    width: 100%;
+    height: 120px;
+    margin-bottom: 50px;
+    display: flex;
+    justify-content: space-between;
+
+    .left,
+    .right {
+        position: relative;
+        width: 70%;
+        height: 120px;
+        border-radius: 15px;
+        text-align: center;
+        color: rgb(90, 90, 90);
+
+    }
+
+    .left {
+        min-width: 450px;
+    }
+
+    .roadMapDes {
+
+        min-width: 300px;
+
+        h2,
+        h3 {
+            text-align: left;
+            font-family: "VT323", monospace;
+        }
+
+        h2 {
+            font-size: 1.5rem;
+            font-weight: 400;
+            color: #ff5;
+        }
+
+        h3 {
+            color: #fff;
+            font-size: 1.3rem;
+        }
+    }
+
+}
+
+.center {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 99;
+
+    .greeNode {
+        max-width: 300px;
+        width: 100%;
+        color: #0f0;
+        background-color: #040;
+        font-family: "VT323", monospace;
+        font-size: 2rem;
+        border: 10px solid #111;
+        text-align: center;
+        border: 2px solid #111;
+        text-shadow: 2px 2px 1px #000;
+        margin: 0 auto;
+    }
+
+    .orangeNode {
+        padding: 0 20px;
+        font-family: "VT323", monospace;
+        font-size: 1.5rem;
+        border: 2px solid #111;
+        color: #ff5;
+        background-color: #a50;
+        image-rendering: pixelated;
+        border: 2px solid #111;
+        text-shadow: 2px 2px 1px #000;
+    }
+
+    .blueNode {
+        padding: 0 20px;
+        font-family: "VT323", monospace;
+        font-size: 1.5rem;
+        border: 2px solid #111;
+        color: #0ff;
+        background-color: #002044;
+        border-radius: 90px;
+        text-shadow: 2px 2px 1px #000;
+        border: 2px solid #111;
+        text-shadow: 2px 2px 1px #000;
+    }
+}
